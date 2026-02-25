@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nano Mind AI</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            background-color: #0f172a;
+            color: #e5e7eb;
+        }
+        .new-chat {
+    display: block;
+    background: #2563eb;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;   /* removes underline */
+    transition: 0.3s;
+}
+
+.new-chat:hover {
+    background: #1d4ed8;
+}
+        /* ===== Sidebar ===== */
+        .sidebar {
+            width: 260px;
+            background-color: #111827;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 30px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .new-chat {
+            background: #2563eb;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .new-chat:hover {
+            background: #1d4ed8;
+        }
+
+        .chat-history {
+            font-size: 14px;
+            color: #9ca3af;
+        }
+
+        /* ===== Main Chat ===== */
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat-header {
+            padding: 20px;
+            border-bottom: 1px solid #1f2937;
+            font-size: 20px;
+            font-weight: 600;
+            background: #111827;
+            color: white;
+        }
+
+        .chat-area {
+            flex: 1;
+            padding: 30px;
+            overflow-y: auto;
+        }
+
+        .message {
+            margin-bottom: 20px;
+            max-width: 70%;
+            padding: 14px 18px;
+            border-radius: 12px;
+            line-height: 1.5;
+            font-size: 15px;
+        }
+
+        .user {
+            background-color: #2563eb;
+            color: white;
+            margin-left: auto;
+        }
+
+        .ai {
+            background-color: #1f2937;
+            color: #e5e7eb;
+        }
+
+        /* ===== Input Area ===== */
+        .input-area {
+            padding: 20px;
+            border-top: 1px solid #1f2937;
+            background: #111827;
+        }
+
+        .input-box {
+            display: flex;
+            background: #1f2937;
+            border-radius: 30px;
+            padding: 8px;
+        }
+
+        .input-box input[type="text"] {
+            flex: 1;
+            border: none;
+            background: transparent;
+            padding: 10px 15px;
+            font-size: 15px;
+            outline: none;
+            color: white;
+        }
+
+        .input-box input[type="submit"] {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .input-box input[type="submit"]:hover {
+            background-color: #1d4ed8;
+        }
+
+        .chat-area::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .chat-area::-webkit-scrollbar-thumb {
+            background: #1f2937;
+            border-radius: 10px;
+        }
+
+    </style>
+
+    <script>
+        function scrollBottom() {
+            var chatArea = document.getElementById("chatArea");
+            chatArea.scrollTop = chatArea.scrollHeight;
+        }
+    </script>
+
+</head>
+
+<body onload="scrollBottom()">
+
+    <div class="sidebar">
+        <h2>🤖 Nano Mind</h2>
+        <a href="/clear" class="new-chat">+ New Chat</a>
+        <div class="chat-history">
+            Internship Assistant<br><br>
+            Embedded Systems Help<br><br>
+            Project Discussion
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="chat-header">
+            Nano Mind AI Assistant
+        </div>
+
+        <div class="chat-area" id="chatArea">
+            {{chat|safe}}
+        </div>
+
+        <form method="POST" class="input-area">
+            <div class="input-box">
+                <input type="text" name="qts" placeholder="Message Nano Mind..." required>
+                <input type="submit" value="Send">
+            </div>
+        </form>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+question,answer
+What is your full name?,My full name is Varad Nangare.
+What is your educational qualification?,I am pursuing a Bachelor of Technology in Electronics Engineering (2023-2027).
+Which college are you studying in?,I am studying at Maharashtra Institute of Technology.
+What year are you currently in?,I am currently in my second year of B.Tech in Electronics Engineering.
+What are your core technical strengths?,My core strengths are embedded systems Python development and PCB design.
+What programming languages are you comfortable with?,I am comfortable with Python C C++ and Embedded C.
+Which microcontrollers have you used?,I have worked with Arduino Nano Arduino Uno and STM32G070KBT6.
+Do you have STM32 experience?,Yes I have experience working with STM32 microcontrollers for embedded applications.
+Have you worked on IoT projects?,Yes I have built IoT-based systems including an automatic plant watering system.
+What is your experience with sensors?,I have integrated LDR IR and soil moisture sensors for real-time monitoring systems.
+Have you built GUI applications?,Yes I have built multiple GUI applications using Python Tkinter.
+What database systems have you used?,I have used SQLite for backend database integration in Python applications.
+Do you know full stack development?,Yes I have developed full stack web applications using Python Bottle framework and SQL.
+What is Servixo?,Servixo is a full stack service booking platform I developed with role-based access control and ticket workflow management.
+How did you implement authentication in your web projects?,I implemented role-based authentication using session management and secure database queries.
+Do you understand database normalization?,Yes I have worked on schema normalization and relational database design.
+What is your experience in PCB design?,I design schematics and create single and double layer PCB layouts using Autodesk EAGLE and KiCad.
+Have you performed DRC checks?,Yes I perform design rule checks to ensure manufacturability and electrical correctness.
+Have you created custom footprints?,Yes I create and manage custom footprints in EAGLE and KiCad.
+What tools do you use for coding?,I use Visual Studio Code Git and STM32 development environments.
+Tell me about your Expense Analyzer project.,It is a Python Tkinter GUI application that tracks expenses and performs data analysis using SQLite.
+Tell me about your Student Management System.,It is a role-based web application built using Python Bottle framework with Admin and Student login functionality.
+Tell me about your AM Modulation Simulator.,It is a Python GUI application that simulates amplitude modulation and calculates modulation index.
+What does your AM simulator calculate?,It calculates carrier frequency message frequency and modulation index.
+Tell me about your IoT plant watering project.,It is an Arduino Nano based automated irrigation system using soil moisture sensors.
+What was your role in the hackathon?,I was the Team Lead responsible for system architecture design and final presentation.
+Do you have leadership experience?,Yes I led a multidisciplinary team during an internal college hackathon.
+Have you presented technical projects?,Yes I have presented system architecture and workflow to faculty evaluators.
+Do you have debugging experience?,Yes I debug hardware-software integration issues in embedded systems.
+What kind of embedded projects have you done?,I have built sensor-based automation systems Bluetooth-based control systems and simulation tools.
+Do you know Bluetooth integration?,Yes I have worked on Bluetooth-based embedded control systems.
+What operating systems do you use?,I primarily work on Windows for development.
+Are you comfortable working in teams?,Yes I have experience working and leading teams in technical projects.
+What are your career interests?,I am interested in embedded product engineering IoT systems and research and development.
+Are you open to internships?,Yes I am actively looking for internship opportunities in embedded systems and product development.
+Why should we hire you?,I bring hands-on embedded experience strong problem solving skills and practical project exposure in hardware and software integration.
+What makes you different from other students?,I focus on practical implementation combining hardware PCB design and backend software development.
+Do you have Git experience?,Yes I use Git for version control and project management.
+Have you worked on hardware prototyping?,Yes I have designed and tested prototype PCBs.
+Do you understand CRUD operations?,Yes I have implemented Create Read Update and Delete operations in my web applications.
+Do you have experience with GUI database integration?,Yes I have integrated SQLite databases with Python Tkinter GUI applications.
+What is your strongest technical area?,My strongest area is embedded systems and hardware-software integration.
+What are your soft skills?,Leadership teamwork presentation skills and technical documentation.
+What is your long term goal?,My long term goal is to work in embedded product development and innovative IoT solutions.
+Can you work under pressure?,Yes I have handled project deadlines and hackathon time constraints successfully.
+Do you enjoy research and development?,Yes I am highly interested in research driven embedded system development.
