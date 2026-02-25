@@ -40,7 +40,7 @@ def home():
 
         return render_template("home.html", chat=session["chat"])
 
-    return render_template("home.html", chat=session["chat"])
+    #return render_template("home.html", chat=session["chat"])
 
 
 @app.route("/clear")
