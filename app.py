@@ -24,9 +24,11 @@ def home():
         cs = cosine_similarity(vector)
 
         score = cs[0][1:]
-        data["score"] = score * 100
 
-        result = data.sort_values(by="score", ascending=False)
+        temp_data = data.copy()  # safer than modifying original
+        temp_data["score"] = score * 100
+
+        result = temp_data.sort_values(by="score", ascending=False)
         result = result[result.score > 10]
 
         if len(result) == 0:
@@ -34,13 +36,11 @@ def home():
         else:
             ans = result.head(1)["answer"].values[0]
 
-        # Add to session chat history
         session["chat"] += f'<div class="message user">{qts}</div>'
         session["chat"] += f'<div class="message ai">{ans}</div>'
 
-        return render_template("home.html", chat=session["chat"])
-
-    #return render_template("home.html", chat=session["chat"])
+    
+    return render_template("home.html", chat=session["chat"])
 
 
 @app.route("/clear")
